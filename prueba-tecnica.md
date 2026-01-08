@@ -116,7 +116,7 @@ Para completar el reto, debes implementar los siguientes endpoints:
 
 ## 7. LÓGICA ESPECIAL: REPORTES AVANZADOS
 
-Implementa un endpoint que use **MongoDB Aggregation Framework** (`$lookup`, `$group`, `$project`). No uses `populate` aquí, queremos ver tu destreza con la base de datos.
+Implementa un endpoint que use **MongoDB Aggregation Framework** (`$lookup`, `$unwind`, `$group`, `$project`). No uses `populate` aquí, queremos ver tu destreza con la base de datos.
 
 - `GET /doctors/:id/performance`
   - Debe devolver un resumen del médico que incluya:
