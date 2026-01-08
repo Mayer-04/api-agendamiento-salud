@@ -25,7 +25,7 @@ const doctorSchema = new Schema(
         },
         start: { type: String, required: true },
         end: { type: String, required: true },
-        // _id: false,
+        _id: false,
       },
     ],
   },
@@ -39,4 +39,4 @@ const doctorSchema = new Schema(
 type DoctorType = InferSchemaType<typeof doctorSchema>;
 const Doctor = model<DoctorType>("Doctor", doctorSchema);
 
-export { Doctor, type DoctorType };
+export { Doctor, type DoctorType, WORKING_DAYS };
